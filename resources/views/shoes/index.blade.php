@@ -53,6 +53,7 @@
         .card {
             border-radius: 10px;
             margin-top: 20px;
+            
         }
         .card-header {
           

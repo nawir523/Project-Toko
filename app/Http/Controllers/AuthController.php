@@ -37,7 +37,7 @@ class AuthController extends Controller
             'type' => "0"
         ]);
  
-        return redirect()->route('home');
+        return redirect()->route('login');
     }
  
     public function login()

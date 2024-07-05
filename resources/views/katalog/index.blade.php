@@ -3,17 +3,15 @@
 @section('title', 'Home Product List')
  
 @section('contents')
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Sepatu</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-   <style>
+    <style>
         /* Style untuk kartu sepatu */
         .card {
             border-radius: 10px;
@@ -86,7 +84,7 @@
             top: 10px; /* Changed to 10px for visibility */
             z-index: 1000; /* Ensure it's above other content */
             background-color: #343a40; /* Set navbar background color */
-            margin-top:50px
+            margin-top:100px;
         }
 
         .w3-bar {
@@ -125,21 +123,20 @@
         .w3-bar .search-form button:hover {
             background-color: #0056b3;
         }
-        
-        .modal-body {
+        .modal-body{
+           
+           
             text-align: center; 
             background-color: black;
-            color: white;
+            color:white;
+           
         }
-      
         
-
+        
     </style>
 </head>
-
 <body>
-    
-    <div class="w3-top">
+<div class="w3-top">
     <div class="w3-bar w3-blue w3-card">
         <div class="w3-bar-item w3-center w3-padding-large">
             <h3 class="m-0">SEPATUANANSHOP</h3>
@@ -209,7 +206,13 @@
 
         @endforeach
     </div>
-</div><script>
+</div>
+
+<!-- Script dan Stylesheet -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
     function updateTotalPrice(harga, shoeId) {
         let jumlah = document.getElementById(`jumlah-${shoeId}`).value;
         let total = harga * jumlah;
@@ -218,7 +221,7 @@
 
     function beliSepatu(shoeId) {
         let jumlah = document.getElementById(`jumlah-${shoeId}`).value;
-        let url = "{{ route('transaksi.store') }}"; // Sesuaikan dengan route untuk menyimpan transaksi
+        let url = "{{ route('transaksi.store') }}";
         let data = {
             shoe_id: shoeId,
             jumlah: jumlah,
@@ -246,6 +249,9 @@
     }
 </script>
 
+
+</body>
+</html>
  @endsection
 <!-- Script dan Stylesheet -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

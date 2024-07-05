@@ -13,13 +13,10 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->string('namamerk');
-            $table->string('tipe');
-            $table->string('jenis'); // misal: anak, wanita, pria
-            $table->string('ukuran');
-            $table->integer('harga');
-            $table->string('stok')->nullable(0); // tambahkan kolom stok dengan default 0
-            $table->string('gambar')->nullable(); // tambahkan kolom gambar nullable
+            $table->string('title');
+            $table->string('price');
+            $table->string('product_code');
+            $table->text('description');
             $table->timestamps();
         });
     }

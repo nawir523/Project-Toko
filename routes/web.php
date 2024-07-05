@@ -39,6 +39,7 @@ Route::group(['middleware' => 'web'], function () {
 // Normal Users Routes List
 Route::middleware(['auth', 'user-access:user'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+   
     Route::get('/profile', [UserController::class, 'userprofile'])->name('profile');
 });
 

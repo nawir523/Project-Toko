@@ -1,4 +1,4 @@
-Anggota Kelompok
+Anggota Kelompok :
 Muhamad Nur Subkan (221240001224)
 Amirul Al Arif (221240001249)
 Munawir Ihsan (221240001234)
