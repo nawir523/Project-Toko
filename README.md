@@ -1,3 +1,5 @@
+Nb: Untuk masuk web bagian Admin, user yang ada di database dirubah type menjadi 1, jika sebagai user type 0
+
 Anggota Kelompok :
 Muhamad Nur Subkan (221240001224)
 Amirul Al Arif (221240001249)
